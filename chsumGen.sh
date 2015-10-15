@@ -21,7 +21,7 @@ if [ -d  "$DIR_FILES" ]; then
     do
       if [ -f "$file" ]; then
         echo "$file"
-        sha256sum "$file" > "${file%.*}.sha256_checksum"
+        sha256sum "$file" > "${file%.*}.sha256sum"
       fi
     done
 fi
